@@ -43,8 +43,8 @@ export default function Detail() {
         })
         return includes
     }
-    return (<>
-        <div className=" px-28 py-10 pt-32">
+    return (
+        <div className="px-28 py-10 h-full pt-32">
             <p>{detail.title}</p>
             <div className="flex gap-10 flex-wrap md:flex-nowrap">
                 {!loading && <img className="h-96" src={detail.images['Poster Art'].url} />}
@@ -59,5 +59,5 @@ export default function Detail() {
 
             </div>
         </div>
-    </>)
+    )
 }

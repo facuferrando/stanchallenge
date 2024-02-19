@@ -1,6 +1,5 @@
 import Home from "./components/Home";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 import Movies from "./components/Movies";
 import Series from "./components/Series";
 import Card from "./components/Card";
@@ -17,7 +16,7 @@ export default function App() {
   return (
     <>
       <CartProvider>
-        <section className="min-h-100vh">
+        <section className="min-h-100vh flex flex-col">
           <Header />
           <Routes>
             <Route path="/" element={<Home />}></Route>
@@ -27,7 +26,6 @@ export default function App() {
             <Route path="/Card" element={<Card />}></Route>
             <Route path="/Detail/:id" element={<Detail />}></Route>
           </Routes>
-          <Footer />
         </section>
       </CartProvider>
     </>
