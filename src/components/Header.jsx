@@ -5,7 +5,7 @@ import { CartContext } from "../context/CartContext";
 export default function Header() {
     const [cart, setCart] = useContext(CartContext)
     return (<>
-        <div className="h-10 bg-sky-500 fixed w-full text-white text-3xl py-10 px-28 flex items-center justify-between">
+        <div className="h-10 bg-sky-500 fixed w-full text-white text-3xl py-10 px-28 gap-5 flex items-center justify-between">
             <Link to="/">DEMO STREAMING</Link>
             {/* it's key to use only LINK and not the <a></a> for rounting */}
             {/* using the <a> tag will RE-RENDER all the app, and send you as a refresh would do it */}

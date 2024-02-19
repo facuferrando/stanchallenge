@@ -26,7 +26,7 @@ export default function Home() {
                     Popular Titles
                 </h2>
             </div>
-            <main className="px-28 py-10 flex gap-10 h-screen">
+            <main className="px-28 py-10 flex gap-10 h-full flex-wrap">
                 <div>
                     <Link to="/Movies" >
                         <img src="/Screenshot_1.png"></img>

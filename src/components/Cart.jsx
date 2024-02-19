@@ -27,7 +27,7 @@ export default function Cart() {
                         <button className="bg-red-600 text-white rounded p-1 m-2 text-center" onClick={() => handleDelete(chartItem)}>Delete from favourites</button>
                     </div>)
                 })}
-                {!cart.length && <p>At the moment there are no Favourites added to your list</p>}
+                {!cart.length && <p className="md:min-h-72">At the moment there are no Favourites added to your list</p>}
 
             </div>
         </>)

@@ -17,16 +17,18 @@ export default function App() {
   return (
     <>
       <CartProvider>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/Movies" element={<Movies />}></Route>
-          <Route path="/Series" element={<Series />}></Route>
-          <Route path="/Cart" element={<Cart />}></Route>
-          <Route path="/Card" element={<Card />}></Route>
-          <Route path="/Detail/:id" element={<Detail />}></Route>
-        </Routes>
-        <Footer />
+        <section className="min-h-100vh">
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/Movies" element={<Movies />}></Route>
+            <Route path="/Series" element={<Series />}></Route>
+            <Route path="/Cart" element={<Cart />}></Route>
+            <Route path="/Card" element={<Card />}></Route>
+            <Route path="/Detail/:id" element={<Detail />}></Route>
+          </Routes>
+          <Footer />
+        </section>
       </CartProvider>
     </>
   )
